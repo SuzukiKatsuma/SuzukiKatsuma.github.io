@@ -1,0 +1,47 @@
+.works {
+  max-height: 75vh;
+  overflow-y: scroll;
+
+  h2 {
+    padding-top: 20px;
+
+    a {
+      margin-right: 8px;
+
+      &:first-child {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+
+  figure {
+    border: 2px solid #f8f4e6;
+    border-radius: 2px;
+    font-size: 0;
+    margin: 16px 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .core-technologies {
+    line-height: 25px;
+    margin-bottom: 16px;
+    position: relative;
+    
+    h3 {
+      display: inline;
+      margin-right: 16px;
+    }
+
+    img {
+      bottom: 0;
+      position: absolute;
+    }
+  }
+}
