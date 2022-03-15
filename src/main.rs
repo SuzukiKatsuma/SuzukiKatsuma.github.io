@@ -17,7 +17,8 @@ struct App {
 	value: u8,
 }
 
-const MAX_VALUE: u8 = 40;
+const NUM_CARDS: usize = 3;
+const MAX_VALUE: u8 = (NUM_CARDS as u8 - 1) * 20;
 
 impl Component for App {
 	type Message = Msg;
@@ -65,9 +66,13 @@ impl Component for App {
 		let arrow: char = if self.is_forward {'↑'} else {'↓'};
 
 		let f_value: f32 = self.value as f32; 
-		let profile_opacity: f32 = 1. - 0.01 * f_value * f_value;
-		let works_opacity: f32 = 1. - 0.01 * (f_value - 20.) * (f_value - 20.);
-		let dead_end_opacity: f32 = 1. - 0.01 * (f_value - 40.) * (f_value - 40.);
+
+		let mut opacity: [f32; NUM_CARDS] = [0.; NUM_CARDS];
+		let mut i = 0;
+		while i < NUM_CARDS {
+			opacity[i] = 1. - 0.01 * (f_value - (i as f32 * 20.)) * (f_value - (i as f32 * 20.));
+			i += 1;
+		}
 
 		html! {
 			<>
@@ -80,28 +85,13 @@ impl Component for App {
 				</header>
 
 				<main onclick={link.callback(|_| Msg::ToggleDirection)} onwheel={movement}>
-					<profile::Profile />
-					<works::Works />
-					<dead_end::DeadEnd />
+					{ profile::profile(opacity[0]) }
+					{ works::works(opacity[1]) }
+					{ dead_end::dead_end(opacity[2]) }
 				</main>
 
 				<footer>
 				</footer>
-
-				<style>
-					{".profile { opacity:"}
-					{profile_opacity}{";"}
-					if 0.1 > profile_opacity {{"pointer-events: none;"}}
-					{"}"}
-					{".works { opacity:"}
-					{works_opacity}{";"}
-					if 0.1 > works_opacity {{"pointer-events: none;"}}
-					{"}"}
-					{".dead-end { opacity:"}
-					{dead_end_opacity}{";"}
-					if 0.1 > dead_end_opacity {{"pointer-events: none;"}}
-					{"}"}
-				</style>
 			</>
 		}
 	}

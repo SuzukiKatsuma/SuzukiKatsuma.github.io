@@ -1,7 +1,6 @@
 use yew::prelude::*;
 
-#[function_component(Works)]
-pub fn works() -> Html {
+pub fn works(opacity: f32) -> Html {
   html! {
     <div class="card works">
       <h1>{"Works"}</h1>
@@ -43,6 +42,13 @@ pub fn works() -> Html {
         <h3>{"Core Technologies: "}</h3>
         <img src="https://img.shields.io/badge/React-20232a.svg?logo=react&style=for-the-badge" alt="React"/>
       </div>
+
+      <style>
+        {".works {"}
+        {"opacity:"}{opacity}{";"}
+        if 0.1 > opacity {{"pointer-events: none;"}}
+        {"}"}
+      </style>
     </div>
   }
 }

@@ -1,7 +1,6 @@
 use yew::prelude::*;
 
-#[function_component(Profile)]
-pub fn profile() -> Html {
+pub fn profile(opacity :f32) -> Html {
     html! {
       <>
         <div class="card profile">
@@ -19,6 +18,13 @@ pub fn profile() -> Html {
               <i class="fa-brands fa-twitter"></i>
             </a>
           </p>
+
+          <style>
+            {".profile {"}
+            {"opacity: "}{opacity}{";"}
+            if 0.1 > opacity {{"pointer-events: none;"}}
+            {"}"}
+          </style>
         </div>
       </>
     }
