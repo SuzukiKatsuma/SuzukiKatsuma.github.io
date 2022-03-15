@@ -10,3 +10,9 @@ edition = "2021"
 yew = "0.19"
 log = "0.4"
 wasm-logger = "0.2.0"
+
+[profile.release]
+panic = 'abort'
+codegen-units = 1
+opt-level = 'z'
+lto = true
