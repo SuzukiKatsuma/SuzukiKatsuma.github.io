@@ -84,14 +84,14 @@ impl Component for App {
 					</p>
 				</header>
 
-				<main onclick={link.callback(|_| Msg::ToggleDirection)} onwheel={movement}>
+				<main>
+					<div class="handling-area"  onclick={link.callback(|_| Msg::ToggleDirection)} onwheel={movement} />
 					{ profile::profile(opacity[0]) }
 					{ works::works(opacity[1]) }
 					{ dead_end::dead_end(opacity[2]) }
 				</main>
 
-				<footer>
-				</footer>
+				<footer />
 			</>
 		}
 	}

@@ -92,6 +92,11 @@ main {
   width: 100vw;
 }
 
+.handling-area {
+  height: 100%;
+  width: 100%;
+}
+
 .card {
   background-color: #302833;
   border: 1px solid #f8f4e6;
@@ -103,7 +108,7 @@ main {
   width: 45vw;
   z-index: 100;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     right: 0;
     z-index: 50;
   }
