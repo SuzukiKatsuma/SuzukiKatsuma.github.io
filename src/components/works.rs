@@ -19,8 +19,8 @@ pub fn works(opacity: f32) -> Html {
       <figure>
         <img src="img/finger-binary-dojo.png" alt="二進指数え法道場" />
       </figure>
-      <div class="core-technologies">
-        <h3>{"Core Technologies: "}</h3>
+      <div class="core-technology">
+        <h3>{"Core Technologiy: "}</h3>
         <img src="https://img.shields.io/badge/Svelte-fff.svg?logo=svelte&style=for-the-badge" alt="Svelte" />
       </div>
 
@@ -38,8 +38,8 @@ pub fn works(opacity: f32) -> Html {
       <figure>
         <img src="img/badge-generator.png" alt="Badge Generator" />
       </figure>
-      <div class="core-technologies">
-        <h3>{"Core Technologies: "}</h3>
+      <div class="core-technology">
+        <h3>{"Core Technologiy: "}</h3>
         <img src="https://img.shields.io/badge/React-20232a.svg?logo=react&style=for-the-badge" alt="React"/>
       </div>
 
