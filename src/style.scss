@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap');
 @import "./styles/breakpoints";
 
+html {
+  min-height: -webkit-fill-available;
+}
+
 body {
   background-color: #393f4c;
   height: 100vh;
   margin: 0;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -119,7 +125,6 @@ main {
     z-index: 50;
   }
 
-    
   @include small {
     margin: 8px;
     width: 72vw;
