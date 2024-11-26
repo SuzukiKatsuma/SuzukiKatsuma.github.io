@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap");
 html {
+  overflow: hidden;
   min-height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 body {
   background-color: #393f4c;
   height: 100vh;
   margin: 0;
-  min-height: 100vh;
   min-height: -webkit-fill-available;
+  min-height: 100vh;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
