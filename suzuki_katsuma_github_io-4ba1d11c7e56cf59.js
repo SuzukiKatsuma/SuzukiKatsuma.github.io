@@ -630,11 +630,11 @@ function __wbg_get_imports() {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper2434 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper2449 = function(arg0, arg1, arg2) {
         const ret = makeClosure(arg0, arg1, 183, __wbg_adapter_16);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper3285 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper3300 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 262, __wbg_adapter_19);
         return addHeapObject(ret);
     };
@@ -677,7 +677,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('suzuki_katsuma_github_io-34937d111f8c0a4f_bg.wasm', import.meta.url);
+        input = new URL('suzuki_katsuma_github_io-4ba1d11c7e56cf59_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
