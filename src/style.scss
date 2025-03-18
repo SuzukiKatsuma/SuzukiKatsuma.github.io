@@ -31,11 +31,13 @@ footer {
   z-index: 500;
 }
 
-a {
+.icon-link {
   color: #f8f4e6;
+  transition: 0.3s ease-out;
 
   &:hover {
     color: #ba2636;
+    transition: 0.2s ease-out;
   }
 }
 

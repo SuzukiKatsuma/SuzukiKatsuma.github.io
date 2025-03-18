@@ -1,3 +1,4 @@
+use crate::components::common::icon_link;
 use yew::prelude::*;
 
 pub fn works(opacity: f32) -> Html {
@@ -7,12 +8,20 @@ pub fn works(opacity: f32) -> Html {
 
         <h2>
           {"二進指数え法道場"}
-          <a target="_blank noopener noreferrer" aria-label="GitHub" title="GitHub" href="https://github.com/SuzukiKatsuma/finger-binary-dojo">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a target="_blank noopener noreferrer" aria-label="二進指数え法道場" title="二進指数え法道場" href="https://suzukikatsuma.github.io/finger-binary-dojo/">
-            <i class="fa-solid fa-globe"></i>
-          </a>
+          {
+            icon_link(
+              String::from("GitHub"),
+              String::from("https://github.com/SuzukiKatsuma/finger-binary-dojo"),
+              html! { <i class="fa-brands fa-github"></i> }
+            )
+          }
+          {
+            icon_link(
+              String::from("二進指数え法道場"),
+              String::from("https://suzukikatsuma.github.io/finger-binary-dojo/"),
+              html! { <i class="fa-solid fa-globe"></i> }
+            )
+          }
         </h2>
         <hr />
         <p>{"— 二進指数え法を練習するための WEB アプリ —"}</p>
@@ -26,12 +35,20 @@ pub fn works(opacity: f32) -> Html {
 
         <h2>
           {"Badge Generator"}
-          <a target="_blank noopener noreferrer" aria-label="GitHub" title="GitHub" href="https://github.com/SuzukiKatsuma/badge-generator">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a target="_blank noopener noreferrer" aria-label="Badge Generator" title="Badge Generator" href="https://suzukikatsuma.github.io/badge-generator/">
-            <i class="fa-solid fa-globe"></i>
-          </a>
+          {
+            icon_link(
+              String::from("GitHub"),
+              String::from("https://github.com/SuzukiKatsuma/badge-generator"),
+              html! { <i class="fa-brands fa-github"></i> }
+            )
+          }
+          {
+            icon_link(
+              String::from("Badge Generator"),
+              String::from("https://suzukikatsuma.github.io/badge-generator/"),
+              html! { <i class="fa-solid fa-globe"></i> }
+            )
+          }
         </h2>
         <hr />
         <p>{"— shields.io のバッジを簡単に作るための WEB アプリ —"}</p>

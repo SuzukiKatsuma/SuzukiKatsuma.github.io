@@ -1,3 +1,4 @@
+use crate::components::common::icon_link;
 use yew::prelude::*;
 
 pub fn profile(opacity: f32) -> Html {
@@ -15,15 +16,27 @@ pub fn profile(opacity: f32) -> Html {
 
         <p class="right">
           {"Contact me: "}
-          <a target="_blank noopener noreferrer" aria-label="Twitter" title="Twitter" href="https://twitter.com/_katsuma">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a target="_blank noopener noreferrer" aria-label="GitHub" title="GitHub" href="https://github.com/SuzukiKatsuma">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a target="_blank noopener noreferrer" aria-label="Zenn" title="Zenn" href="https://zenn.dev/suzuki_katsuma">
-            <i class="fa-solid fa-paperclip"></i>
-          </a>
+          {
+            icon_link(
+              String::from("X"),
+              String::from("https://x.com/_katsuma"),
+              html! { <i class="fa-brands fa-x-twitter"></i> }
+            )
+          }
+          {
+            icon_link(
+              String::from("GitHub"),
+              String::from("https://github.com/SuzukiKatsuma"),
+              html! { <i class="fa-brands fa-github"></i> }
+            )
+          }
+          {
+            icon_link(
+              String::from("Zenn"),
+              String::from("https://zenn.dev/suzuki_katsuma"),
+              html! { <i class="fa-solid fa-newspaper"></i> }
+            )
+          }
         </p>
 
         <style>
