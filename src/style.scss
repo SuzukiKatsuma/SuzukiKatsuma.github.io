@@ -153,5 +153,12 @@ main {
 /*     Fotter     */
 /******************/
 footer {
+  display: grid;
+  align-items: end;
+  justify-items: end;
   border-top: 1px solid #f8f4e6;
+
+  p {
+    margin: 8px 0;
+  }
 }
