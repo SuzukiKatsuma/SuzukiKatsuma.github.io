@@ -138,6 +138,10 @@ main {
   }
 }
 
+.profile {
+  max-width: 600px;
+}
+
 .introduction {
   display: grid;
   gap: 16px;
@@ -224,5 +228,11 @@ main {
 /*     Fotter     */
 /******************/
 footer {
+  display: grid;
+  align-items: end;
+  justify-items: end;
   border-top: 1px solid #f8f4e6;
+}
+footer p {
+  margin: 8px 0;
 }
