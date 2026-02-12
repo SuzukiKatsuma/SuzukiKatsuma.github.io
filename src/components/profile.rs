@@ -30,13 +30,27 @@ pub fn profile(opacity: f32) -> Html {
               html! { <i class="fa-brands fa-github"></i> }
             )
           }
-          {
-            icon_link(
-              String::from("Zenn"),
-              String::from("https://zenn.dev/suzuki_katsuma"),
-              html! { <i class="fa-solid fa-newspaper"></i> }
-            )
-          }
+        </p>
+
+        <p class="right">
+          {"Articles: "}
+          <a
+            class="icon-link"
+            target="_blank noopener noreferrer"
+            aria-label="Zenn"
+            href="https://zenn.dev/suzuki_katsuma"
+          >
+            { "Zenn" }
+          </a>
+          { ", " }
+          <a
+            class="icon-link"
+            target="_blank noopener noreferrer"
+            aria-label="Qiita"
+            href="https://qiita.com/_katsuma"
+          >
+            { "Qiita" }
+          </a>
         </p>
 
         <style>
