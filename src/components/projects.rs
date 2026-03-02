@@ -1,10 +1,10 @@
 use crate::components::common::icon_link;
 use yew::prelude::*;
 
-pub fn works(opacity: f32) -> Html {
+pub fn projects(opacity: f32) -> Html {
     html! {
-      <div class="card works">
-        <h1>{"Works"}</h1>
+      <div class="card projects">
+        <h1>{"Projects"}</h1>
 
         <h2>
           {"二進指数え法道場"}
@@ -61,7 +61,7 @@ pub fn works(opacity: f32) -> Html {
         </div>
 
         <style>
-          {".works {"}
+          {".projects {"}
           {"opacity:"}{opacity}{";"}
           if 0.1 > opacity {{"pointer-events: none;"}}
           {"}"}

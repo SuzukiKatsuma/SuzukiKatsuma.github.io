@@ -81,7 +81,7 @@ impl Component for App {
           <main>
             <div class="handling-area" onwheel={on_wheel} />
             { profile::profile(opacity[0]) }
-            { works::works(opacity[1]) }
+            { projects::projects(opacity[1]) }
             { dead_end::dead_end(opacity[2]) }
           </main>
 
