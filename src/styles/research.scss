@@ -1,0 +1,26 @@
+.research {
+  max-height: 75vh;
+  overflow-y: scroll;
+
+  hr {
+    margin: 32px 0;
+  }
+}
+
+.paper {
+  a {
+    text-decoration: none;
+
+    &:hover {
+
+      .title {
+        color: #ba2636;
+        transition: 0.2s ease-out;
+      }
+    }
+  }
+
+  .title {
+    margin-top: 32px;
+  }
+}
