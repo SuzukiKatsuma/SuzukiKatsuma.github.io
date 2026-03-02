@@ -9,7 +9,7 @@ pub fn profile(opacity: f32) -> Html {
           </figure>
 
           <p>{"Hello, I'm"}
-          <h1>{"Suzuki Katsuma"}</h1>
+          <h1>{"SUZUKI Katsuma"}</h1>
           </p>
         </div>
 
