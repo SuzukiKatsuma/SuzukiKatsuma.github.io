@@ -161,41 +161,60 @@ main {
   height: 100%;
 }
 
-.works {
+.research {
   max-height: 75vh;
   overflow-y: scroll;
 }
-.works h2 {
+.research hr {
+  margin: 32px 0;
+}
+
+.paper a {
+  text-decoration: none;
+}
+.paper a:hover .title {
+  color: #ba2636;
+  transition: 0.2s ease-out;
+}
+.paper .title {
+  margin-top: 32px;
+}
+
+.projects {
+  max-height: 75vh;
+  overflow-y: scroll;
+}
+.projects h2 {
   padding-top: 20px;
 }
-.works h2 a {
+.projects h2 a {
   margin-right: 8px;
 }
-.works h2 a:first-child {
+.projects h2 a:first-child {
   margin-left: 16px;
 }
-.works p {
+.projects p {
   text-align: center;
 }
-.works figure {
+.projects figure {
   border: 2px solid #f8f4e6;
   border-radius: 2px;
   font-size: 0;
   margin: 16px 0;
 }
-.works figure img {
+.projects figure img {
   width: 100%;
 }
-.works .core-technology {
+.projects .core-technology {
   line-height: 25px;
   margin-bottom: 16px;
   position: relative;
 }
-.works .core-technology h3 {
+.projects .core-technology h3 {
   display: inline;
   margin-right: 16px;
 }
-.works .core-technology img {
+.projects .core-technology img {
   bottom: 0;
   position: absolute;
 }
